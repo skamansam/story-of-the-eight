@@ -12,6 +12,7 @@ let subtitle = 'Story of The Eight'
 <meta name="author" content={author} />
 
 <!-- open graph -->
+<meta property="og:site_name" content={title}/>
 <meta property="og:title" content={`${title} - ${subtitle}`} />
 <meta property="og:description" content={description} />
 <meta property="og:type" content="website" />
@@ -19,6 +20,10 @@ let subtitle = 'Story of The Eight'
 <meta property="og:image" content={`${Astro.site}${image}`} />
 
 <!-- twitter card -->
+<meta property="twitter:card" content="summary_large_image"/>
+<meta property="twitter:image" content={`${Astro.site}${image}`}/>
+<meta property="twitter:title" content={`${title} - ${subtitle}`}/>
+<meta property="twitter:description" content={description} />
 
 <!-- page title -->
 <title>{title} - {subtitle}</title>
